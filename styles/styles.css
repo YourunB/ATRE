@@ -1,6 +1,11 @@
 :root {
   --light-brown: rgba(248, 188, 147, 1);
   --main-blue:rgba(20, 89, 118, 1);
+  --text-color: rgb(255, 255, 255);
+}
+
+::selection {
+  background: var(--light-brown);
 }
 
 html {
@@ -21,13 +26,26 @@ a {
 }
 
 body {
-  overflow-x: hidden;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
+  color: var(--text-color);
 }
 
-::selection {
-  background: var(--light-brown);
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
 }
 
 *::-webkit-scrollbar {
