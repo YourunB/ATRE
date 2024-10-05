@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../assets/fonts/Raleway/Raleway-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
 :root {
   --light-brown: rgba(248, 188, 147, 1);
   --main-blue:rgba(20, 89, 118, 1);
@@ -60,6 +67,10 @@ body {
 }
 
 .menu {
+  font-family: Raleway;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 21px;
   margin: 0;
   padding: 0;
   list-style: none;
