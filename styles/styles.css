@@ -39,13 +39,41 @@ body {
 }
 
 .header {
+  width: 100%;
+}
+
+.header-wrapper {
+  min-height: 160px;
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 34px;
+  margin: auto;
+  border-bottom: solid 1.5px var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.logo {
+  max-height: 94px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 35px;
 }
 
 .main {
   flex: 1;
+  width: 100%;
 }
 
 .footer {
+  width: 100%;
 }
 
 *::-webkit-scrollbar {
