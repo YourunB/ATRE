@@ -1,5 +1,12 @@
 @font-face {
   font-family: 'Raleway';
+  src: url('../assets/fonts/Raleway/Raleway-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
   src: url('../assets/fonts/Raleway/Raleway-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
@@ -123,6 +130,67 @@ body {
   font-size: 128px;
   font-weight: 800;
   color: rgba(255, 255, 255, 0.32);
+}
+
+.activity {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  border-top: solid 1.5px var(--text-color);
+  border-bottom: solid 1.5px var(--text-color);
+}
+
+.activity-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.activity__title {
+  font-family: Raleway;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--light-brown);
+}
+
+.activity__description {
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.activity-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.activity-list__item {
+  padding: 0;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.activity-list__item__name {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 33px;
+  margin-bottom: 33px;
+}
+
+.activity-arrow {
+  position: absolute;
+  right: 0;
+}
+
+.activity-list__item__description {
+  width: 100%;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 500;
+  max-height: 277px;
+  overflow-y: auto;
 }
 
 .footer {
