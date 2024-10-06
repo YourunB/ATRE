@@ -175,6 +175,7 @@ body {
   font-family: Raleway;
   font-size: 24px;
   font-weight: 600;
+  cursor: pointer;
   transition: 0.5s;
 }
 
@@ -182,28 +183,34 @@ body {
   position: relative;
   display: flex;
   align-items: center;
+  padding-right: 30px;
   gap: 33px;
   margin-bottom: 33px;
+  pointer-events: none;
 }
 
 .activity-arrow {
   display: none;
   position: absolute;
   right: 0;
+  pointer-events: none;
 }
 
 .activity-list__item__description {
   position: relative;
   display: none;
-  width: 100%;
   font-family: Raleway;
   font-size: 22px;
   font-weight: 500;
   max-height: 277px;
   overflow-y: auto;
   margin-bottom: 50px;
-  padding: 30px;
+  margin-left: 90px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  width: calc(100% - 90px);
   border-bottom: solid 1.5px var(--text-color);
+  cursor: text;
 }
 
 .activity-list__item_checked .activity-list__item__description {
@@ -211,13 +218,6 @@ body {
 }
 .activity-list__item_checked .activity-arrow {
   display: inline;
-}
-
-@media(hover:hover) {
-  .activity-list__item:hover {
-    color: var(--light-brown);
-    cursor: pointer;
-  }
 }
 
 .footer {
