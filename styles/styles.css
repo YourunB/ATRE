@@ -148,7 +148,6 @@ body {
   max-width: 1920px;
   width: 100%;
   margin: auto;
-  border-bottom: solid 1.5px var(--text-color);
   padding: 60px 170px 70px 170px;
 }
 
@@ -184,6 +183,7 @@ body {
 
 .activity {
   border-top: solid 1.5px var(--text-color);
+  border-bottom: solid 1.5px var(--text-color);
 }
 
 .activity-box {
@@ -254,6 +254,12 @@ body {
   display: inline;
 }
 
+/*-------------------------------------news-section--------------------------*/
+
+.news {
+  border-bottom: solid 1.5px var(--text-color);
+}
+
 /*-------------------------------------slider--------------------------------*/
 
 .slick-arrow {
@@ -307,7 +313,62 @@ body {
 
 .footer {
   width: 100%;
+  color: var(--main-blue);
+  background-color: var(--light-brown);
+
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
 }
+
+.footer-wrapper {
+  max-width: 1920px;
+  padding-top: 44px;
+  padding-bottom: 67px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 90px;
+  border-bottom: solid 1.5px var(--main-blue);
+}
+
+.footer-links {
+  display: flex;
+  gap: 70px ;
+}
+
+.footer-links__link {
+  display: block;
+  margin-bottom: 23px;
+}
+
+.footer-links__link:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer-contacts__title {
+  margin: 0 0 23px 0;
+}
+
+.footer-contacts__contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 23px;
+}
+
+.footer-contacts__contact:nth-of-type(2) {
+  margin-bottom: 0;
+}
+
+.footer-contacts__contact__phone {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/*-------------------------------------scroll--------------------------------*/
 
 *::-webkit-scrollbar {
   width: 5px;
@@ -325,7 +386,7 @@ body {
 }
 
 *::-webkit-scrollbar-thumb {
-  border-radius: 4px;
+  border-radius: 5px;
   background-color: var(--light-brown);
 }
 *::-webkit-scrollbar-thumb:hover {
