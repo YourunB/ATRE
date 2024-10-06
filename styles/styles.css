@@ -144,7 +144,7 @@ body {
 
 .activity-box {
   display: flex;
-  gap: 20px;
+  gap: 33px;
 }
 
 .activity__title {
@@ -218,6 +218,24 @@ body {
 }
 .activity-list__item_checked .activity-arrow {
   display: inline;
+}
+
+.main-button {
+  width: 295px;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-brown);
+  border: none;
+  color: var(--main-blue);
+  border-radius: 35px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  margin: auto;
 }
 
 .footer {
