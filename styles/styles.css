@@ -315,11 +315,11 @@ body {
 }
 
 .slick-prev::before {
-  content: url('/assets/images/svg/left.svg');
+  content: url('../assets/images/svg/left.svg');
 }
 
 .slick-next::before {
-  content: url('/assets/images/svg/right.svg');
+  content: url('../assets/images/svg/right.svg');
 }
 
 .multiple-slider .slick-prev {
