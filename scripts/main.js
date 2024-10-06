@@ -15,10 +15,18 @@ btnOpenMenu.addEventListener('click', () => {
   navigationMenu.classList.add('header-navigation_show');
   btnOpenMenu.classList.add('btn-menu_hide');
   btnCloseMenu.classList.remove('btn-menu_hide');
+  document.body.classList.add('scroll-off');
 })
 
 btnCloseMenu.addEventListener('click', () => {
   navigationMenu.classList.remove('header-navigation_show');
   btnOpenMenu.classList.remove('btn-menu_hide');
   btnCloseMenu.classList.add('btn-menu_hide');
+  document.body.classList.remove('scroll-off');
+})
+
+window.addEventListener('resize', () => {
+  const width = document.body.getBoundingClientRect().width;
+  if (width >= 992) document.body.classList.remove('scroll-off');
+  if (width <= 992 && btnOpenMenu.classList.contains('btn-menu_hide')) document.body.classList.add('scroll-off');
 })
