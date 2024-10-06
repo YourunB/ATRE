@@ -25,6 +25,7 @@ btnCloseMenu.addEventListener('click', () => {
   document.body.classList.remove('scroll-off');
 })
 
+//----------------------------------контроль скролла
 window.addEventListener('resize', () => {
   const width = document.body.getBoundingClientRect().width;
   if (width >= 992) document.body.classList.remove('scroll-off');
