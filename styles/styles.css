@@ -266,14 +266,27 @@ body {
   width: 664px;
   padding: 0 45px;
   width: 100%;
+  cursor: grab;
 }
 
 .multiple-slider__slide__img {
   width: 100%;
 }
 
-.slick-arrow::before {
-  display: none;
+.multiple-slider__slide__description {
+  display: block;
+  padding-top: 20px;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.slick-prev::before {
+  content: url('/assets/images/svg/left.svg');
+}
+
+.slick-next::before {
+  content: url('/assets/images/svg/right.svg');
 }
 
 .multiple-slider .slick-prev {
