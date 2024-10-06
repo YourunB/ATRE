@@ -260,6 +260,19 @@ body {
   border-bottom: solid 1.5px var(--text-color);
 }
 
+/*----------------------------------trust-section-----------------------------*/
+
+.trust {
+  position: relative;
+}
+
+.btn-top {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  line-height: 0;
+}
+
 /*-------------------------------------slider--------------------------------*/
 
 .slick-arrow {
@@ -366,6 +379,23 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.footer-copyright {
+  min-height: 99px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-copyright {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  justify-content: flex-end;
+}
+
+.footer-copyright span {
+  margin-right: 180px;
 }
 
 /*-------------------------------------scroll--------------------------------*/
