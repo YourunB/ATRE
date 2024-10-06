@@ -60,6 +60,8 @@ body {
   min-height: 100vh;
 }
 
+/*-------------------------------------header--------------------------------*/
+
 .header {
   width: 100%;
 }
@@ -115,9 +117,15 @@ body {
 }
 
 .video-wrapper {
+  max-width: 1920px;
+  width: 100%;
   position: relative;
   width: fit-content;
   margin: auto;
+}
+
+.video__image {
+  width: 100%;
 }
 
 .video__text {
@@ -133,21 +141,18 @@ body {
   color: rgba(255, 255, 255, 0.32);
 }
 
-.activity {
+
+/*-------------------------------------section--------------------------------*/
+
+.section {
   max-width: 1920px;
   width: 100%;
   margin: auto;
-  border-top: solid 1.5px var(--text-color);
   border-bottom: solid 1.5px var(--text-color);
   padding: 60px 170px 70px 170px;
 }
 
-.activity-box {
-  display: flex;
-  gap: 33px;
-}
-
-.activity__title {
+.section__title {
   font-family: Raleway;
   font-size: 28px;
   font-weight: 800;
@@ -155,6 +160,35 @@ body {
   color: var(--light-brown);
   margin-top: 0;
   margin-bottom: 70px;
+}
+
+.main-button {
+  width: 295px;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-brown);
+  border: none;
+  color: var(--main-blue);
+  border-radius: 35px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  margin: auto;
+}
+
+/*-------------------------------------activity section--------------------------------*/
+
+.activity {
+  border-top: solid 1.5px var(--text-color);
+}
+
+.activity-box {
+  display: flex;
+  gap: 33px;
 }
 
 .activity__description {
@@ -220,23 +254,33 @@ body {
   display: inline;
 }
 
-.main-button {
-  width: 295px;
-  min-height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*-------------------------------------slider--------------------------------*/
+
+.slick-arrow {
+  width: 23px;
+  height: 100px;
   background-color: var(--light-brown);
-  border: none;
-  color: var(--main-blue);
-  border-radius: 35px;
-  font-family: Raleway;
-  font-size: 18px;
-  font-weight: 500;
-  text-align: center;
-  cursor: pointer;
-  margin: auto;
 }
+
+.multiple-slider__slide {
+  width: 664px;
+  padding: 0 45px;
+  width: 100%;
+}
+
+.multiple-slider__slide__img {
+  width: 100%;
+}
+
+.slick-arrow::before {
+  display: none;
+}
+
+.multiple-slider .slick-prev {
+  margin-right: 100px;
+}
+
+/*-------------------------------------footer--------------------------------*/
 
 .footer {
   width: 100%;
