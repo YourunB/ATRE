@@ -37,7 +37,6 @@
     padding-bottom: 140px;
   }
 
-  
   .footer-wrapper {
     gap: 30px;
   }
@@ -117,5 +116,46 @@
 
   .footer-contacts__title {
     text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-wrapper,
+  .footer-copyright {
+    min-height: 80px;
+  }
+
+  .footer-copyright {
+    min-height: 80px;
+  }
+
+  .logo,
+  .footer-logo img {
+    max-height: 50px;
+  }
+
+  .section,
+  .footer-wrapper,
+  .footer-copyright,
+  .header-wrapper {
+    padding: 20px;
+  }
+
+  .section__title {
+    margin-bottom: 20px;
+  }
+
+  .trust {
+    padding-bottom: 100px;
+  }
+
+  .activity-list__item__name {
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .activity-list__item__description {
+    margin: 0 0 20px 0;
+    width: 100%;
   }
 }
