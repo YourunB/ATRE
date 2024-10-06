@@ -50,7 +50,6 @@ a {
 body {
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
   color: var(--text-color);
 }
 
@@ -129,6 +128,7 @@ body {
 }
 
 .video__text {
+  display: none;
   margin: 0;
   position: absolute;
   top: 45%;
@@ -140,7 +140,6 @@ body {
   font-weight: 800;
   color: rgba(255, 255, 255, 0.32);
 }
-
 
 /*-------------------------------------section--------------------------------*/
 
