@@ -180,11 +180,13 @@ body {
 }
 
 .activity-arrow {
+  display: none;
   position: absolute;
   right: 0;
 }
 
 .activity-list__item__description {
+  display: none;
   width: 100%;
   font-family: Raleway;
   font-size: 22px;
