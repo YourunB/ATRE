@@ -260,10 +260,15 @@ body {
   border-bottom: solid 1.5px var(--text-color);
 }
 
+.news .main-button {
+  margin-top: 74px;
+}
+
 /*----------------------------------trust-section-----------------------------*/
 
 .trust {
   position: relative;
+  padding-bottom: 220px;
 }
 
 .btn-top {
