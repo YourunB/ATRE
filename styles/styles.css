@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Raleway';
+  src: url('../assets/fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 :root {
   --light-brown: rgba(248, 188, 147, 1);
   --main-blue:rgba(20, 89, 118, 1);
@@ -53,7 +60,7 @@ body {
   min-height: 160px;
   max-width: 1920px;
   width: 100%;
-  padding: 0 34px;
+  padding: 0 35px;
   margin: auto;
   border-bottom: solid 1.5px var(--text-color);
   display: flex;
@@ -71,16 +78,51 @@ body {
   font-weight: 600;
   font-style: normal;
   font-size: 21px;
+  text-align: center;
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   gap: 35px;
+  align-items: center;
+}
+
+.menu__item {
+  text-transform: uppercase;
+}
+
+.menu__item_checked {
+  color: var(--light-brown);
 }
 
 .main {
   flex: 1;
   width: 100%;
+}
+
+.video {
+  background-color: var(--light-brown);
+  width: 100%;
+  margin: 20px 0;
+}
+
+.video-wrapper {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+}
+
+.video__text {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  right: 55%;
+  transform:translate(-50%, -50%);
+  margin: auto;
+  font-family: Raleway;
+  font-size: 128px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.32);
 }
 
 .footer {
