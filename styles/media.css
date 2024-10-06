@@ -57,8 +57,39 @@
 }
 
 @media(max-width: 992px) {
-  .menu {
+  .header-navigation {
+    position: absolute;
+    backdrop-filter: blur(10px);
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+    right: 0;
+    top: 100px;
+    overflow-y: auto;
+    transform: translateX(120%);
+  }
+
+  .header-navigation_show {
+    transform: translateX(0);
+  }
+
+  .btn-menu {
+    display: block;
+  }
+
+  .btn-menu_hide {
     display: none;
+  }
+  
+  .menu {
+    display: block;
+  }
+
+  .menu__item {
+    padding: 10px 0;
   }
 
   .activity-box {
@@ -120,15 +151,6 @@
 }
 
 @media (max-width: 576px) {
-  .header-wrapper,
-  .footer-copyright {
-    min-height: 80px;
-  }
-
-  .footer-copyright {
-    min-height: 80px;
-  }
-
   .logo,
   .footer-logo img {
     max-height: 50px;

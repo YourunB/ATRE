@@ -67,6 +67,7 @@ body {
 }
 
 .header-wrapper {
+  position: relative;
   min-height: 160px;
   max-width: 1920px;
   width: 100%;
@@ -81,6 +82,19 @@ body {
 
 .logo {
   max-height: 94px;
+}
+
+.btn-menu {
+  cursor: pointer;
+  display: none;
+  max-width: 50px;
+  filter: invert(1);
+}
+
+/*----------------------------------------menu--------------------------------------*/
+
+.header-navigation {
+  transition: transform 0.5s;
 }
 
 .menu {
@@ -109,6 +123,9 @@ body {
   flex: 1;
   width: 100%;
 }
+
+
+/*---------------------------------video-section--------------------------------------*/
 
 .video {
   background-color: var(--light-brown);
@@ -387,7 +404,7 @@ body {
 }
 
 .footer-copyright {
-  min-height: 99px;
+  min-height: 100px;
   display: flex;
   align-items: center;
 }
