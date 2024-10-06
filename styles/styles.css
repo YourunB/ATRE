@@ -262,14 +262,24 @@ body {
   background-color: var(--light-brown);
 }
 
-.multiple-slider__slide {
-  width: 664px;
-  padding: 0 45px;
+.multiple-slider__slide,
+.company-slider__slide {
   width: 100%;
   cursor: grab;
 }
 
-.multiple-slider__slide__img {
+.multiple-slider__slide {
+  width: 664px;
+  padding: 0 45px;
+}
+
+.company-slider__slide {
+  width: 200px;
+  padding: 0 45px;
+}
+
+.multiple-slider__slide__img,
+.company-slider__slide__img {
   width: 100%;
 }
 
