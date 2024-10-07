@@ -306,11 +306,23 @@ body {
   row-gap: 60px;
   column-gap: 120px;
   justify-content: center;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 145px;
 }
 
 .gallery__item {
   width: 100%;
   max-width: 715px;
+}
+
+.gallery__item img {
+  width: 100%;
+}
+
+.gallery__item p {
+  margin: 20px 0 0 0;
 }
 
 /*-------------------------------------news-section--------------------------*/
