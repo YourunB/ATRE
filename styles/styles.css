@@ -361,6 +361,27 @@ body {
   margin: auto;
   padding: 50px 170px 20px 170px;
   border-bottom: solid 1.5px var(--text-color);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.history-links__link {
+  padding: 0 15px;
+  border-right: solid 1px var(--text-color);
+}
+
+.history-links__link_checked {
+  color: var(--light-brown);
+}
+
+.history-links__link:first-of-type {
+  padding-left: 0;
+}
+
+.history-links__link:last-of-type {
+  padding-right: 0;
+  border: none;
 }
 
 /*-------------------------------------footer--------------------------------*/
