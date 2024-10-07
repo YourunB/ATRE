@@ -1,5 +1,12 @@
 @font-face {
   font-family: 'Raleway';
+  src: url('../assets/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
   src: url('../assets/fonts/Raleway/Raleway-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
@@ -335,6 +342,40 @@ body {
   margin-top: 74px;
 }
 
+/*-----------------------------------section-article--------------------------*/
+
+.section-article {
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.article-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 77px;
+  font-family: Raleway;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.article-top__image {
+  max-width: 715px;
+  width: 100%;
+}
+
+.article-top__image img {
+  width: 100%;
+}
+
+.article-top__text {
+  width: 100%;
+  align-items: center;
+}
+
 /*----------------------------------trust-section-----------------------------*/
 
 .trust {
@@ -358,7 +399,8 @@ body {
 }
 
 .multiple-slider__slide,
-.company-slider__slide {
+.company-slider__slide,
+.single-slider__slide {
   width: 100%;
   cursor: grab;
 }
@@ -373,8 +415,14 @@ body {
   padding: 0 45px;
 }
 
+.single-slider__slide {
+  width: 1420px;
+  padding: 0 65px;
+}
+
 .multiple-slider__slide__img,
-.company-slider__slide__img {
+.company-slider__slide__img,
+.single-slider__slide__img {
   width: 100%;
 }
 

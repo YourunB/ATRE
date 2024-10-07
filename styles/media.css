@@ -21,12 +21,14 @@
   .activity__description,
   .activity-list__item__description,
   .multiple-slider__slide__description,
+  .section-article,
   .gallery,
   .footer {
     font-size: 16px;
   }
 
-  .activity-list__item {
+  .activity-list__item,
+  .article-top {
     font-size: 18px;
   }
 
