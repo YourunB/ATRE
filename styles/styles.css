@@ -285,6 +285,34 @@ body {
   padding-bottom: 220px;
 }
 
+/*----------------------------section-projects-------------------------------*/
+
+.section-projects {
+  border-bottom: solid 1.5px var(--text-color);
+}
+
+/*---------------------------section-publication-----------------------------*/
+
+.section-publication {
+  position: relative;
+  padding-bottom: 220px;
+}
+
+/*------------------------------------gallery-------------------------------*/
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 60px;
+  column-gap: 120px;
+  justify-content: center;
+}
+
+.gallery__item {
+  width: 100%;
+  max-width: 715px;
+}
+
 /*-------------------------------------news-section--------------------------*/
 
 .news {
