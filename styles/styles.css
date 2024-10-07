@@ -360,7 +360,8 @@ body {
 /*--------------------------------section-media-------------------------------*/
 
 .section-media {
-  padding: 0;
+  padding: 0 0 220px 0;
+  position: relative;
 }
 
 .section-media .section__title {
@@ -390,6 +391,13 @@ body {
   font-weight: 700;
 }
 
+.media-container {
+  margin: 90px 0 168px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
 .media-item {
   display: flex;
   gap: 50px;
@@ -416,6 +424,7 @@ body {
 .media-item__content h3 {
   width: 100%;
   height: 30%;
+  margin: 0 0 30px 0;
 
   overflow: hidden;
   display: -webkit-box;
@@ -426,7 +435,13 @@ body {
   font-family: Raleway;
   font-size: 28px;
   font-weight: 700;
+}
 
+.media-item__content p {
+  margin: 0 0 20px 0;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 /*------------------------------------gallery---------------------------------*/
