@@ -345,6 +345,8 @@ body {
 /*-----------------------------------section-article--------------------------*/
 
 .section-article {
+  position: relative;
+  padding-bottom: 220px;
   font-family: Raleway;
   font-size: 22px;
   font-weight: 500;
@@ -396,6 +398,10 @@ body {
   width: 23px;
   height: 100px;
   background-color: var(--light-brown);
+}
+
+.single-slider {
+  margin: 70px 0;
 }
 
 .multiple-slider__slide,
