@@ -280,6 +280,11 @@ body {
   display: inline;
 }
 
+.activity-full {
+  position: relative;
+  padding-bottom: 220px;
+}
+
 /*-------------------------------------news-section--------------------------*/
 
 .news {
@@ -489,5 +494,5 @@ body {
 }
 
 .scroll-off {
-  overflow: hidden;
+  overflow-y: hidden;
 }
