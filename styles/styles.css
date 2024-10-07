@@ -240,6 +240,15 @@ body {
   pointer-events: none;
 }
 
+.icon-wrapper {
+  height: 64px;
+  width: 64px;
+}
+
+.icon-wrapper img {
+  width: 100%;
+}
+
 .activity-arrow {
   display: none;
   position: absolute;
@@ -342,6 +351,16 @@ body {
 
 .multiple-slider .slick-prev {
   margin-right: 100px;
+}
+
+/*-------------------------------------back-box------------------------------*/
+
+.history-links {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  padding: 50px 170px 20px 170px;
+  border-bottom: solid 1.5px var(--text-color);
 }
 
 /*-------------------------------------footer--------------------------------*/
