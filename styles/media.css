@@ -11,24 +11,23 @@
   .header-wrapper {
     min-height: 100px;
   }
-
-  .section__title {
-    font-size: 18px;
-  }
-
+  
   .menu,
   .main-button,
   .activity__description,
   .activity-list__item__description,
   .multiple-slider__slide__description,
   .section-article,
+  .section-news,
   .gallery,
   .footer {
     font-size: 16px;
   }
 
+  .section__title,
   .activity-list__item,
-  .article-top {
+  .article-top,
+  .news-box__news__link {
     font-size: 18px;
   }
 
@@ -43,7 +42,8 @@
   .trust,
   .activity-full,
   .section-publication,
-  .section-article {
+  .section-articlem,
+  .section-news {
     padding-bottom: 140px;
   }
 
@@ -63,6 +63,10 @@
   .footer-wrapper,
   .footer-copyright {
     padding: 35px;
+  }
+
+  .news-box {
+    gap: 40px;
   }
 }
 
@@ -120,6 +124,10 @@
     margin-bottom: 80px;
   }
 
+  .news-box {
+    margin-bottom: 80px;
+  }
+
   .article-top {
     gap: 20px;
     margin-bottom: 20px;
@@ -164,9 +172,14 @@
 }
 
 @media (max-width: 768px) {
-  .gallery {
+  .gallerym
+  .news-box {
     grid-template-columns: 1fr;
     margin-bottom: 40px;
+  }
+
+  .news-box__news a {
+    margin: 20px 0;
   }
 
   .footer-links {
@@ -208,7 +221,9 @@
   .trust,
   .activity-full,
   .section-publication,
-  .section-article {
+  .section-article,
+  .section-news,
+  .section-news {
     padding-bottom: 100px;
   }
 
