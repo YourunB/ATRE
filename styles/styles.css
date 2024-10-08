@@ -139,16 +139,19 @@ body {
   position: relative;
 }
 
-.menu__item__name img {
+.menu__item__name__arrow {
   position: absolute;
   left: 50%;
   bottom: -40px;
   transform: translateX(-50%);
+  opacity: 0;
+  z-index: -1;
 }
 
 .header-contacts {
   position: absolute;
-  z-index: 101;
+  opacity: 0;
+  z-index: -1;
   right: 0;
   top: 100%;
   max-width: 865px;
@@ -162,6 +165,13 @@ body {
   font-family: Raleway;
   font-size: 20px;
   font-weight: 500;
+  transition: 0.5s;
+}
+
+.header-contacts_show,
+.menu__item__name__arrow_show {
+  opacity: 1;
+  z-index: 101;
 }
 
 .header-contacts__data {

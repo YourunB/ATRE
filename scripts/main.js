@@ -38,16 +38,36 @@ window.addEventListener('resize', () => {
 const sliderTeam = document.querySelector('.team-slider');
 const sliderIndividual = document.querySelector('.individual-slider');
 
-sliderTeam.addEventListener('click', (e) => {
-  if (e.target.classList.contains('team-slider__slide__img')) {
-    sliderTeam.classList.add('team-slider_hide');
-    sliderIndividual.classList.remove('individual-slider_hide');
-  }
-});
+if (sliderTeam) {
+  sliderTeam.addEventListener('click', (e) => {
+    if (e.target.classList.contains('team-slider__slide__img')) {
+      sliderTeam.classList.add('team-slider_hide');
+      sliderIndividual.classList.remove('individual-slider_hide');
+    }
+  });
+}
 
-sliderIndividual.addEventListener('click', (e) => {
-  if (e.target.classList.contains('slide-close')) {
-    sliderIndividual.classList.add('individual-slider_hide');
-    sliderTeam.classList.remove('team-slider_hide');
+if (sliderIndividual) {
+  sliderIndividual.addEventListener('click', (e) => {
+    if (e.target.classList.contains('slide-close')) {
+      sliderIndividual.classList.add('individual-slider_hide');
+      sliderTeam.classList.remove('team-slider_hide');
+    }
+  });
+}
+
+//------------------------------------контакты в header
+const btnMenuContacts = document.querySelector('.menu__item__name');
+const menuContacts = document.querySelector('.header-contacts');
+const arrowMenuContacts = document.querySelector('.menu__item__name__arrow');
+
+btnMenuContacts.addEventListener('click', () => {
+  btnMenuContacts.classList.toggle('menu__item_checked');
+  if (btnMenuContacts.classList.contains('menu__item_checked')) {
+    arrowMenuContacts.classList.add('menu__item__name__arrow_show');
+    menuContacts.classList.add('header-contacts_show');
+  } else {
+    arrowMenuContacts.classList.remove('menu__item__name__arrow_show');
+    menuContacts.classList.remove('header-contacts_show');
   }
 });

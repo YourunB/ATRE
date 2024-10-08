@@ -108,6 +108,7 @@
 
   .header-contacts {
     max-width: 100%;
+    top: calc(100% + 60px);
   }
 
   .section__title {
