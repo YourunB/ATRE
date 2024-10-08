@@ -106,7 +106,7 @@
     position: relative;
   }
 
-  .header-contacts {
+  .header-contacts_show {
     max-width: 100%;
     top: calc(100% + 60px);
   }
