@@ -34,4 +34,20 @@ window.addEventListener('resize', () => {
   if (width <= 992 && btnOpenMenu.classList.contains('btn-menu_hide')) document.body.classList.add('scroll-off');
 })
 
-//----------------------------------слайдер контакты
+//----------------------------------слайдеры команты
+const sliderTeam = document.querySelector('.team-slider');
+const sliderIndividual = document.querySelector('.individual-slider');
+
+sliderTeam.addEventListener('click', (e) => {
+  if (e.target.classList.contains('team-slider__slide__img')) {
+    sliderTeam.classList.add('team-slider_hide');
+    sliderIndividual.classList.remove('individual-slider_hide');
+  }
+});
+
+sliderIndividual.addEventListener('click', (e) => {
+  if (e.target.classList.contains('slide-close')) {
+    sliderIndividual.classList.add('individual-slider_hide');
+    sliderTeam.classList.remove('team-slider_hide');
+  }
+});

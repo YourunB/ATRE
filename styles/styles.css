@@ -540,7 +540,17 @@ body {
   line-height: 0;
 }
 
-/*-------------------------------------slider--------------------------------*/
+/*-------------------------------------section-team---------------------------*/
+
+.section-team {
+  border-bottom: solid 1.5px var(--text-color);
+}
+
+.sliders {
+  position: relative;
+}
+
+/*--------------------------------------slider--------------------------------*/
 
 .slick-arrow {
   width: 23px;
@@ -614,6 +624,7 @@ body {
   position: absolute;
   top: 25px;
   right: 25px;
+  cursor: pointer;
 }
 
 .company-slider__slide {
@@ -686,9 +697,19 @@ body {
   margin-right: 100px;
 }
 
+.team-slider,
+.individual-slider {
+  transition: 1.5s;
+}
+
 .individual-slider_hide,
 .team-slider_hide {
-  display: none;
+  position: absolute;
+  transform: translateX(-200%);
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 /*-------------------------------------back-box------------------------------*/
