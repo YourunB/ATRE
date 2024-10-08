@@ -553,7 +553,8 @@ body {
 
 .multiple-slider__slide,
 .company-slider__slide,
-.single-slider__slide {
+.single-slider__slide,
+.team-slider__slide {
   width: 100%;
   cursor: grab;
 }
@@ -571,6 +572,11 @@ body {
 .single-slider__slide {
   width: 1420px;
   padding: 0 65px;
+}
+
+.team-slider__slide {
+  width: 252px;
+  padding: 0 45px;
 }
 
 .multiple-slider__slide__img,
