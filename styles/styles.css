@@ -38,7 +38,7 @@
   --dark-brown: rgb(165, 96, 49);
   --main-blue:rgba(20, 89, 118, 1);
   --text-color: rgb(255, 255, 255);
-  --text-dark: rgb(70, 70, 70, 1);
+  --text-dark: rgb(70, 70, 70);
 }
 
 ::selection {
@@ -134,11 +134,58 @@ body {
   color: var(--light-brown);
 }
 
+.header-contacts {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 100%;
+  max-width: 865px;
+  width: 100%;
+  min-height: 200px;
+  background-color: var(--text-color);
+  padding: 16px;
+  display: flex;
+  gap: 20px;
+  color: var(--text-dark);
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.header-contacts__data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header-contacts__data__contact {
+  width: 100%;
+}
+
+.header-contacts__data__contact,
+.header-contacts__data__contact a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-contacts__data__contact .icon-box {
+  width: 23px;
+  height: 23px;
+}
+
+.header-contacts__data__contact .icon-box img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+/*---------------------------------------------------main-----------------------------*/
+
 .main {
   flex: 1;
   width: 100%;
 }
-
 
 /*---------------------------------video-section--------------------------------------*/
 
