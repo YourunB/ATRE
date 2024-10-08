@@ -631,6 +631,20 @@ body {
   padding: 0 25px;
 }
 
+.team-slider__slide__title {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0 0 0;
+}
+
+.team-slider__slide__description {
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 9px 0 0 0;
+}
+
 .multiple-slider__slide__img,
 .company-slider__slide__img,
 .single-slider__slide__img,
@@ -670,6 +684,11 @@ body {
 
 .multiple-slider .slick-prev {
   margin-right: 100px;
+}
+
+.individual-slider_hide,
+.team-slider_hide {
+  display: none;
 }
 
 /*-------------------------------------back-box------------------------------*/

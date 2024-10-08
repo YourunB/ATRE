@@ -33,3 +33,5 @@ window.addEventListener('resize', () => {
   if (width >= 992) document.body.classList.remove('scroll-off');
   if (width <= 992 && btnOpenMenu.classList.contains('btn-menu_hide')) document.body.classList.add('scroll-off');
 })
+
+//----------------------------------слайдер контакты
