@@ -134,9 +134,21 @@ body {
   color: var(--light-brown);
 }
 
+.menu__item__name {
+  cursor: pointer;
+  position: relative;
+}
+
+.menu__item__name img {
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  transform: translateX(-50%);
+}
+
 .header-contacts {
   position: absolute;
-  z-index: 1;
+  z-index: 101;
   right: 0;
   top: 100%;
   max-width: 865px;
@@ -170,8 +182,8 @@ body {
 }
 
 .header-contacts__data__contact .icon-box {
-  width: 23px;
-  height: 23px;
+  min-width: 23px;
+  min-height: 23px;
 }
 
 .header-contacts__data__contact .icon-box img {

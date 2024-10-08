@@ -21,7 +21,8 @@
   .section-news,
   .gallery,
   .media-item__content p,
-  .footer {
+  .footer,
+  .header-contacts {
     font-size: 16px;
   }
 
@@ -93,6 +94,22 @@
 }
 
 @media(max-width: 992px) {
+  .menu {
+    width: 100%;
+  }
+
+  .menu__item {
+    width: 100%;
+  }
+
+  .menu__item:last-of-type {
+    position: relative;
+  }
+
+  .header-contacts {
+    max-width: 100%;
+  }
+
   .section__title {
     margin-bottom: 40px;
   }
@@ -258,6 +275,11 @@
 }
 
 @media (max-width: 768px) {
+  .header-contacts {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .individual-slider__slide__img {
     max-width: 252px;
     width: 100%;
