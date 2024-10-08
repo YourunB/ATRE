@@ -257,7 +257,23 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  .individual-slider__slide__img {
+    max-width: 252px;
+    width: 100%;
+  }
+
+  .slide-close {
+    top: 10px;
+    right: 10px;
+  }
+
+  .slide-wrapper {
+    padding: 40px 20px 20px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .logo,
   .footer-logo img {
     max-height: 50px;

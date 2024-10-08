@@ -38,6 +38,7 @@
   --dark-brown: rgb(165, 96, 49);
   --main-blue:rgba(20, 89, 118, 1);
   --text-color: rgb(255, 255, 255);
+  --text-dark: rgb(70, 70, 70, 1);
 }
 
 ::selection {
@@ -554,7 +555,8 @@ body {
 .multiple-slider__slide,
 .company-slider__slide,
 .single-slider__slide,
-.team-slider__slide {
+.team-slider__slide,
+.individual-slider__slide {
   width: 100%;
   cursor: grab;
 }
@@ -562,6 +564,56 @@ body {
 .multiple-slider__slide {
   width: 664px;
   padding: 0 45px;
+}
+
+.individual-slider__slide {
+  width: 100%;
+  margin: 0 25px;
+  background: var(--text-color);
+  color: black;
+}
+
+.slide-content {
+  color: var(--text-dark);
+}
+
+.slide-content__header {
+  padding-bottom: 24px;
+  border-bottom: solid 1px var(--main-blue);
+}
+
+.slide-content__header h3 {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main-blue);
+  margin: 12px 0;
+}
+
+.slide-content__header p {
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.slide-content__main p {
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.slide-wrapper {
+  padding: 20px 50px;
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+
+.slide-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
 }
 
 .company-slider__slide {
@@ -576,13 +628,18 @@ body {
 
 .team-slider__slide {
   width: 252px;
-  padding: 0 45px;
+  padding: 0 25px;
 }
 
 .multiple-slider__slide__img,
 .company-slider__slide__img,
-.single-slider__slide__img {
+.single-slider__slide__img,
+.team-slider__slide__img {
   width: 100%;
+}
+
+.individual-slider__slide__img {
+  width: 252px;
 }
 
 .multiple-slider__slide__description {
@@ -591,6 +648,16 @@ body {
   font-family: Raleway;
   font-size: 24px;
   font-weight: 600;
+}
+
+.team-slider__slide__title {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.team-slider__slide__img {
+  cursor: pointer;
 }
 
 .slick-prev::before {
