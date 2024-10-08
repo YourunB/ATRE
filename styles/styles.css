@@ -328,12 +328,14 @@ body {
   pointer-events: none;
 }
 
-.icon-wrapper {
+.activity-list__item__name .icon-wrapper {
   height: 64px;
   width: 64px;
+  min-height: 64px;
+  min-width: 64px;
 }
 
-.icon-wrapper img {
+.activity-list__item__name .icon-wrapper img {
   width: 100%;
 }
 
