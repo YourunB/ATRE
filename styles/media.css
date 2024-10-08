@@ -247,6 +247,10 @@
     text-overflow: ellipsis;
   }
 
+  .news-box {
+    grid-template-columns: 1fr;
+  }
+
   .gallerym
   .news-box {
     grid-template-columns: 1fr;
