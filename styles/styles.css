@@ -787,6 +787,10 @@ body {
   width: 100%;
 }
 
+.individual-slider_hide .individual-slider__slide {
+  height: 100px;
+}
+
 /*-------------------------------------back-box------------------------------*/
 
 .history-links {
