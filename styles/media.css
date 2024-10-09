@@ -347,3 +347,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 576px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
