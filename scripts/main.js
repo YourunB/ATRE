@@ -72,18 +72,24 @@ btnMenuContacts.addEventListener('click', () => {
   }
 });
 
-//--------------------------------------при скролле изменить header
+//--------------------------------------при скролле изменить header и следить за кнопкой вверх
 const header = document.querySelector('.header');
+const btnTop = document.querySelector('.btn-top');
 
 let timeout;
 
 window.addEventListener('scroll', function() {
   clearTimeout(timeout);
-  timeout = setTimeout(function() {
-    if (window.scrollY > 50) {
-      header.classList.add('header_scrolled');
-    } else {
-      header.classList.remove('header_scrolled');
-    }
+  timeout = setTimeout(() => {
+    window.scrollY > 50 ? header.classList.add('header_scrolled') : header.classList.remove('header_scrolled');
+    window.scrollY > 200 ? btnTop.classList.add('btn-top_show') : btnTop.classList.remove('btn-top_show');
   }, 250);
+});
+
+btnTop.addEventListener('click', () => {
+  btnTop.classList.remove('btn-top_show');
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
 });
