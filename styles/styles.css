@@ -162,6 +162,10 @@ body {
   z-index: -1;
 }
 
+.header_scrolled .menu__item__name__arrow {
+  bottom: -14px;
+}
+
 .header-contacts {
   position: absolute;
   opacity: 0;

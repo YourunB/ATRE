@@ -122,7 +122,7 @@
 
   .header-contacts_show {
     max-width: 100%;
-    top: calc(100% + 60px);
+    top: calc(100% + 8px);
   }
 
   .section__title {
