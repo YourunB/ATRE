@@ -156,14 +156,11 @@ body {
 .menu__item__name__arrow {
   position: absolute;
   left: 50%;
-  bottom: -40px;
+  bottom: 0;
   transform: translateX(-50%);
   opacity: 0;
   z-index: -1;
-}
-
-.header_scrolled .menu__item__name__arrow {
-  bottom: -14px;
+  transition: 1s;
 }
 
 .header-contacts {
@@ -190,6 +187,10 @@ body {
 .menu__item__name__arrow_show {
   opacity: 1;
   z-index: 101;
+}
+
+.menu__item__name__arrow_show {
+  bottom: -40px;
 }
 
 .header-contacts_show {
