@@ -678,6 +678,10 @@ body {
   cursor: grab;
 }
 
+.multiple-slider a {
+  cursor: pointer;
+}
+
 .company-slider__slide {
   display: flex;
   align-items: center;
