@@ -9,6 +9,10 @@
     gap: 20px;
   }
 
+  .btn-top {
+    width: 80px;
+  }
+
   .logo,
   .footer-logo img {
     max-height: 70px;
@@ -133,6 +137,10 @@
 @media(max-width: 992px) {
   .menu {
     font-size: 16px;
+  }
+
+  .btn-top {
+    width: 70px;
   }
 
   .header_scrolled .logo {
@@ -423,5 +431,9 @@
 
   .history-links {
     display: none;
+  }
+
+  .btn-top {
+    width: 60px;
   }
 }

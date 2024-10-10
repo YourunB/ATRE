@@ -636,12 +636,12 @@ body {
   line-height: 0;
   opacity: 0;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .btn-top_show {
   z-index: 1;
   opacity: 1;
-  transition: 0.5s;
 }
 
 /*-------------------------------------section-team---------------------------*/

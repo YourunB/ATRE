@@ -172,7 +172,10 @@
       <div class="footer-copyright">
         <span>© 2024. Все права защищены</span>
       </div>
-      <video class="footer__clip" src="assets/videos/video.mp4" autobuffer autoplay loop muted></video>
+      <video class="footer__clip" src="assets/videos/video.mp4" autobuffer autoplay loop muted>
+        <source src="assets/videos/video-low.mp4" type="video/mp4" media="(max-width: 991px)">
+        <source src="assets/videos/video.mp4" type="video/mp4" media="(min-width: 992px)">
+      </video>
     </footer>
 
     <img class="btn-top" src="assets/images/svg/btn-to-top.svg" alt="Вверх">
