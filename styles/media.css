@@ -124,10 +124,14 @@
 }
 
 @media(max-width: 992px) {
+  .article-top {
+    flex-wrap: wrap;
+  }
+
   .menu {
     font-size: 16px;
   }
-  
+
   .header_scrolled .logo {
     max-height: 40px;
   }
@@ -169,7 +173,6 @@
     height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
     z-index: 100;
     right: 0;
@@ -405,5 +408,9 @@
 @media (max-width: 576px) {
   .gallery {
     grid-template-columns: 1fr;
+  }
+
+  .history-links {
+    display: none;
   }
 }
