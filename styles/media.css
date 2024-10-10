@@ -94,6 +94,20 @@
 }
 
 @media(max-width: 992px) {
+  .header_scrolled .logo {
+    max-height: 40px;
+  }
+  
+  .header_scrolled .header-wrapper {
+    height: 40px;
+    padding: 0 20px;
+  }
+
+  .header_scrolled .header-navigation {
+    height: calc(100vh - 40px);
+    top: 50px;
+  }
+
   .menu {
     width: 100%;
   }
@@ -117,7 +131,7 @@
 
   .header-navigation {
     position: absolute;
-    backdrop-filter: blur(10px);
+    background-color: var(--main-blue);
     height: calc(100vh - 100px);
     display: flex;
     justify-content: center;

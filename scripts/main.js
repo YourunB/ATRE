@@ -71,3 +71,14 @@ btnMenuContacts.addEventListener('click', () => {
     menuContacts.classList.remove('header-contacts_show');
   }
 });
+
+//--------------------------------------при скролле изменить header
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 50) {
+    header.classList.add('header_scrolled');
+  } else {
+    header.classList.remove('header_scrolled');
+  }
+});
