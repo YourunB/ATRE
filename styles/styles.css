@@ -614,30 +614,11 @@ body {
   font-weight: 500;
 }
 
-.article-top {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  margin-bottom: 77px;
-  font-family: Raleway;
-  font-size: 28px;
-  font-weight: 400;
-}
-
-.article-top__image {
+.article__image {
   max-width: 715px;
   width: 100%;
-}
-
-.article-top__image img {
-  width: 100%;
-}
-
-.article-top__text {
-  width: 100%;
-  align-items: center;
+  float: left;
+  margin: 0 20px 20px 0;
 }
 
 /*----------------------------------trust-section-----------------------------*/
