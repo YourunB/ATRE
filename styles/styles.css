@@ -677,6 +677,11 @@ body {
   cursor: grab;
 }
 
+.company-slider__slide {
+  display: flex;
+  align-items: center;
+}
+
 .multiple-slider__slide {
   width: 664px;
   padding: 0 45px;
