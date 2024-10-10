@@ -679,11 +679,6 @@ body {
   cursor: pointer;
 }
 
-.company-slider__slide {
-  display: flex;
-  align-items: center;
-}
-
 .multiple-slider__slide {
   width: 664px;
   padding: 0 45px;
@@ -743,6 +738,11 @@ body {
 .company-slider__slide {
   width: 200px;
   padding: 0 45px;
+}
+
+.company-slider .slick-track {
+  display: flex;
+  align-items: center;
 }
 
 .single-slider__slide {
