@@ -243,6 +243,7 @@ body {
   position: relative;
   width: 100%;
   margin: 20px 0;
+  background-color: var(--light-brown);
   overflow: hidden;
 }
 
