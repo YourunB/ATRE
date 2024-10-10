@@ -75,10 +75,15 @@ btnMenuContacts.addEventListener('click', () => {
 //--------------------------------------при скролле изменить header
 const header = document.querySelector('.header');
 
+let timeout;
+
 window.addEventListener('scroll', function() {
-  if (window.scrollY > 50) {
-    header.classList.add('header_scrolled');
-  } else {
-    header.classList.remove('header_scrolled');
-  }
+  clearTimeout(timeout);
+  timeout = setTimeout(function() {
+    if (window.scrollY > 50) {
+      header.classList.add('header_scrolled');
+    } else {
+      header.classList.remove('header_scrolled');
+    }
+  }, 250);
 });
