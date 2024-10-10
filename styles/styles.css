@@ -234,9 +234,22 @@ body {
 /*---------------------------------video-section--------------------------------------*/
 
 .video {
-  background-color: var(--light-brown);
+  position: relative;
   width: 100%;
   margin: 20px 0;
+  overflow: hidden;
+}
+
+.video__clip,
+.footer__clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer__clip {
+  z-index: -1;
 }
 
 .video-wrapper {
@@ -842,9 +855,10 @@ body {
 /*-------------------------------------footer--------------------------------*/
 
 .footer {
+  position: relative;
+  overflow: hidden;
   width: 100%;
   color: var(--main-blue);
-  background-color: var(--light-brown);
 
   font-family: Raleway;
   font-size: 18px;
