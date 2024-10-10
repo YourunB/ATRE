@@ -241,6 +241,8 @@
     margin-bottom: 20px;
   }
 
+
+
   .single-slider {
     margin: 30px 0;
   }
@@ -369,6 +371,11 @@
   .footer-copyright,
   .header-wrapper {
     padding: 20px;
+  }
+
+  .news,
+  .trust {
+    padding: 20px 40px;
   }
 
   .section-media {
