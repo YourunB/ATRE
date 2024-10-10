@@ -189,6 +189,10 @@ body {
   z-index: 101;
 }
 
+.header_scrolled .menu__item__name__arrow_show {
+  opacity: 0;
+}
+
 .menu__item__name__arrow_show {
   bottom: -40px;
 }
