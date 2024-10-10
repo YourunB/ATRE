@@ -374,7 +374,9 @@
   }
 
   .news,
-  .trust {
+  .trust,
+  .section-projects,
+  .section-team {
     padding: 20px 40px;
   }
 
