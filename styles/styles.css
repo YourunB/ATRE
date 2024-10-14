@@ -750,9 +750,20 @@ body {
   padding: 0 65px;
 }
 
+.team-slider {
+  cursor: grab;
+}
+
 .team-slider__slide {
   width: 252px;
   padding: 0 25px;
+  cursor: pointer;
+}
+
+.team-slider__slide img,
+.team-slider__slide__title,
+.team-slider__slide__description {
+  pointer-events: none;
 }
 
 .team-slider__slide__title {
