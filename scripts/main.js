@@ -179,13 +179,15 @@ btnCloseModal.addEventListener('click', () => {
 })
 
 const closeModal = () => {
+  const width = document.body.getBoundingClientRect().width;
   overlay.classList.remove('overlay_show');
   if (width <= 992 && !btnOpenMenu.classList.contains('btn-menu_hide')) document.body.classList.remove('scroll-off');
+  if (width > 992) document.body.classList.remove('scroll-off');
 }
 
 //----------------------------------контроль скролла
 window.addEventListener('resize', () => {
   const width = document.body.getBoundingClientRect().width;
-  if (width >= 992 && !overlay.classList.contains('overlay_show')) document.body.classList.remove('scroll-off');
+  if (width > 992 && !overlay.classList.contains('overlay_show')) document.body.classList.remove('scroll-off');
   if (width <= 992 && btnOpenMenu.classList.contains('btn-menu_hide')) document.body.classList.add('scroll-off');
 })
