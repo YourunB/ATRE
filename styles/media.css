@@ -354,18 +354,21 @@
     padding-bottom: 100px;
   }
 
-  .individual-slider__slide__img {
+  .modal__img {
     max-width: 252px;
     width: 100%;
   }
 
-  .slide-close {
+  .modal-close {
     top: 10px;
     right: 10px;
   }
 
-  .slide-wrapper {
+  .modal {
     padding: 40px 20px 20px 20px;
+  }
+
+  .modal-wrapper {
     flex-wrap: wrap;
     justify-content: center;
   }
